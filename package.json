@@ -1,6 +1,6 @@
 {
   "name": "swagger-jsdoc-generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Command line script that generates a swagger file based on jsdoc comments",
   "main": "index.js",
   "bin": {
