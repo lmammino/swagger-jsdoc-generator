@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+- '7'
+- '6'
+- '5'
+- '4'
+env:
+- CXX=g++-4.8
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+script:
+- npm test
+install:
+- npm install --dev
+before_install:
+- npm update -g npm
+deploy:
+  provider: npm
+  email: lucianomammino@gmail.com
+  api_key:
+    secure: SG7pFfDJZ8OPXj6owGudnNBEFaOFACPcxUfHtlUW4LfjX20nKJZOQg0E4KBY4sLNIA823BL+nX/7RVlukrMD9WxnH0k2eqYwiZytf7S+BX94HjS3RDMPvaISRcWqrwxuWcHbFoeQPm2/auo2lVrTAt1OSvXvOpC3bOHvv913xu0BSmfBi8c7oSTuR5e7QOqH08wuR5LOwBp/pqQlfbvF5X+PRUs/BBcVB2CTy9xICDLH+CROY1E6A44ht98zNPeIfFpZ3UnGmALKj73GhJNEfx6ucKYzfxwCkV0IdRwHKL+mZ4HFx8xYQwN/qzZVynw5YARA0KgVxo51ccM3z48VVzGLeXd7bmVm1uiEsjuk1Mv/65LrKi7Tw3ciPIqs/b9cmhphvTmiZtD6/uEU05qkrdg926r36mcbHfTQqKM9Bc41/th3Os3yCJlch/vCtpnNdy+lfYCAJ3KxY+h5DYHYDUgU9L///tvnt4Mso9fYpj7dpMt/tIMU6OagL6f7kb5qe5UC5zmcV9jyLAYL3LBMvby2t1FSo2NOca/Ms7f8/BnEs/RT+v/Cvz3u2E2iPNNES6ybifvC60hCdeKnKFCSJqkTZc0K+XlxKAr69Y7hWs29xeeJPlJqzEG64n5T8ywIIvsP18whU+hRVe7FFx10HX2sslvwQsaTQzS956cJfA0=
+  on:
+    tags: true
+    repo: lmammino/swagger-jsdoc-generator

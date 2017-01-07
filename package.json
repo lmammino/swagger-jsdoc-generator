@@ -1,0 +1,50 @@
+{
+  "name": "swagger-jsdoc-generator",
+  "version": "1.0.0",
+  "description": "Command line script that generates a swagger file based on jsdoc comments",
+  "main": "index.js",
+  "bin": {
+    "swagger-jsdoc-generator": "./index.js"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmammino/swagger-jsdoc-generator.git"
+  },
+  "keywords": [
+    "swagger",
+    "jsdoc",
+    "generator",
+    "comments",
+    "documentation",
+    "api",
+    "swagger jsdoc",
+    "swagger javascript",
+    "swagger documentation"
+  ],
+  "author": "Luciano Mammino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmammino/swagger-jsdoc-generator/issues"
+  },
+  "homepage": "https://github.com/lmammino/swagger-jsdoc-generator#readme",
+  "engines": {
+    "node": ">=4",
+    "npm": ">=2"
+  },
+  "dependencies": {
+    "swagger-jsdoc": "^1.8.4"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "rules": {
+      "import/no-dynamic-require": 0,
+      "indent": [2, 2, {"SwitchCase": 1}]
+    }
+  }
+}
