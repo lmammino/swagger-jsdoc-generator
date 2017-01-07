@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/lmammino/swagger-jsdoc-generator.svg?branch=master)](https://travis-ci.org/lmammino/swagger-jsdoc-generator)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
-Command line script that generates a swagger file based on jsdoc comments
+Command line script that generates a swagger file based on jsdoc comments.
 
 
 ## Usage
@@ -36,9 +36,10 @@ swaggerToHtml < swagger-jsdoc-generator config.js
 
 More detailed example on how to configure and use the command [later here](https://github.com/lmammino/swagger-jsdoc-generator/blob/master/README.md#example).
 
+
 ## Requirements
 
-This package requires Node.js (version >= 4.0.0) and Npm (version >= 2.14.2).
+This package requires Node.js (version >= 4.0.0) and NPM (version >= 2.14.2).
 
 
 ## Install
@@ -49,7 +50,7 @@ Global install:
 npm install --global swagger-jsdoc-generator
 ```
 
-As dev dependency (e.g. as part of a build process)
+As dev dependency (e.g. if needed as part of a build process):
 
 ```bash
 npm install --save-dev swagger-jsdoc-generator
