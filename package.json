@@ -35,7 +35,7 @@
     "npm": ">=2"
   },
   "dependencies": {
-    "swagger-jsdoc": "^1.8.4"
+    "swagger-jsdoc": "^6.0.0"
   },
   "devDependencies": {
     "ava": "^0.17.0",
